@@ -4,6 +4,7 @@
 if cat /etc/os-release | grep -q "Arch"; then
 	echo "Arch"
 	sudo pacman -Syy
+	sudo pacman -S --noconfirm vim
 	sudo pacman -S --noconfirm btop
 	sudo pacman -S --noconfirm cargo
 	sudo pacman -S --noconfirm nmap
