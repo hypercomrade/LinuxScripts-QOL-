@@ -4,8 +4,11 @@
 if cat /etc/os-release | grep -q "Arch"; then
 	echo "Arch"
 	sudo pacman -Syy
-	sudo pacman -S btop
-	sudo pacman -S 
+	sudo pacman -S --noconfirm btop
+	sudo pacman -S --noconfirm cargo
+	sudo pacman -S --noconfirm nmap
+	sudo pacman -S --noconfirm fastfetch
+	fastfetch
 
 elif cat /etc/os-release | grep -q "Ubuntu"; then
 	echo "Ubuntu"
