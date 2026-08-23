@@ -10,6 +10,7 @@ if cat /etc/os-release | grep -q "Arch"; then
 elif cat /etc/os-release | grep -q "Ubuntu"; then
 	echo "Ubuntu"
 	sudo apt update && sudo apt -y upgrade
+	sudo apt install vlc -y
 
 else
 	echo "Null"
