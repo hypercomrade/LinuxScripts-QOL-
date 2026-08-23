@@ -8,6 +8,7 @@ if cat /etc/os-release | grep -q "Arch"; then
 	sudo pacman -S --noconfirm cargo
 	sudo pacman -S --noconfirm nmap
 	sudo pacman -S --noconfirm fastfetch
+	sudo pacman -S --noconfirm vlc
 	fastfetch
 
 elif cat /etc/os-release | grep -q "Ubuntu"; then
