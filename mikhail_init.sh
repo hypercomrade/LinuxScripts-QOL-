@@ -16,6 +16,13 @@ if cat /etc/os-release | grep -q "Arch"; then
 elif cat /etc/os-release | grep -q "Ubuntu"; then
 	echo "Ubuntu"
 	sudo apt update && sudo apt upgrade
+	sudo apt install -y vim
+	sudo apt install -y btop
+	sudo apt install -y cargo
+	sudo apt install -y nmap
+	sudo apt install -y fastfetch
+	sudo apt install -y vlc
+
 
 else
 	echo "Null"
